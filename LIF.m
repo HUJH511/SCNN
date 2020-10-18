@@ -1,4 +1,4 @@
-%%A1 *15
+
 
 function NUMB = LIF(i,k,time,thresh,M,delta_t)
 %i: time index
@@ -36,7 +36,7 @@ T_psc(2) = 0;
 T_psc(3) = 0;
 No_pscs = length(T_psc);
 Q = 40e-12; % charge deliverd by a single PSC event
-I_0 = Q ./ tau_s; % resulting ’normalisation’ constant for the exponential description of the PSC
+I_0 = Q ./ tau_s; % resulting â€™normalisationâ€™ constant for the exponential description of the PSC
 index_pscs = round(T_psc ./ delta_t);
 % initialise synaptic current
 I_syn = zeros(1, No_steps + 1);
